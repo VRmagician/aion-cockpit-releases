@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: aion-cockpit
+    runtime: image
+    plan: free
+    region: singapore
+    image:
+      url: ghcr.io/vrmagician/aion-cockpit-pwa:latest
+    envVars:
+      - key: PORT
+        value: 8080
